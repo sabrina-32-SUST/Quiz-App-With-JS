@@ -37,6 +37,12 @@ function showProgress() {
     };
 
 function showScores() {
+
+    var gameOverHTML = "<h1>Result</h1>";
+    gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
+    var element = document.getElementById("quiz");
+    element.innerHTML = gameOverHTML;
+
    };
 
 
