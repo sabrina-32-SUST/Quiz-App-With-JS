@@ -58,4 +58,6 @@ var questions = [
 // create quiz
 var quiz = new Quiz(questions);
 
+// display quiz
+populate();
 
