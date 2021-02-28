@@ -55,4 +55,7 @@ var questions = [
     new Question("MVC is a ____.", ["Language", "Library", "Framework", "All"], "Framework")
 ];
 
+// create quiz
+var quiz = new Quiz(questions);
+
 
