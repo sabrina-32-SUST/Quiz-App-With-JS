@@ -13,8 +13,6 @@ for(var i = 0; i < choices.length; i++) {
     var element = document.getElementById("choice" + i);
     element.innerHTML = choices[i];
     guess("btn" + i, choices[i]);
-
-
 }
         
         showProgress();
@@ -22,7 +20,13 @@ for(var i = 0; i < choices.length; i++) {
 };
 
 
-
+function guess(id, guess) {
+    var button = document.getElementById(id);
+    button.onclick = function() {
+        quiz.guess(guess);
+        populate();
+    }
+};
 
 function showProgress() {
     };
